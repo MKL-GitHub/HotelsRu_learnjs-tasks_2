@@ -1,0 +1,14 @@
+.soccer-field {
+    background-color: #2dd42d;
+    width: 300px;
+    height: 300px;
+    border: 6px solid #0c08f6;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <a name="list">the list</a>
+    <ul>
+        <li><a href="https://google.com">https://google.com</a></li>
+        <li><a href="/tutorial">/tutorial.html</a></li>
+        <li><a href="local/path">local/path</a></li>
+        <li><a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a></li>
+        <li><a href="https://nodejs.org">https://nodejs.org</a></li>
+        <li><a href="http://internal.com/test">http://internal.com/test</a></li>
+    </ul>
+
+    <script>
+        let links = document.querySelectorAll('a');
+        
+        for (let link of links) {
+            if (/http:\/\/internal.com/.test(link.getAttribute("href"))) continue;
+
+            if( /:\/\//.test(link.getAttribute("href"))) {
+                link.style.color = "orange";
+            }
+        }
+    </script>
+</body>
+</html>

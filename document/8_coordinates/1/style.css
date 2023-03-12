@@ -1,0 +1,11 @@
+
+.soccer-field {
+    position: fixed;
+    left: 20px;
+    top: 45px;
+    width: 300px;
+    height: 300px;
+    background-color: #2bb92b;
+    border: 14px solid blue;
+}
+

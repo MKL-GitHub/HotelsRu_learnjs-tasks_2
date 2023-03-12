@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        let body = document.body;
+      
+        body.innerHTML = "<!--" + body.tagName + "-->";
+      
+        alert( body.firstChild.data ); // BODY
+
+        // Результат будет BODY, поскольку комментарий - это единственное
+        // содержимое тега body, а свойство data возвращает содержимое этого
+        // комментария.
+      </script>
+</body>
+</html>
