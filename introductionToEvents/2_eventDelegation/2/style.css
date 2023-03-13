@@ -1,0 +1,15 @@
+body {
+    background-color: #333;
+    color: white;
+}
+
+.tree li span {
+    cursor: pointer;
+    user-select: none;
+}
+.tree li span:hover {
+    color: #cdb42c;
+}
+.tree li span:active {
+    color: #ffe23c;
+}

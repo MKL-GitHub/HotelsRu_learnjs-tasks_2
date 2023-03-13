@@ -1,0 +1,46 @@
+
+body {
+    background-color: #444;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #333;
+    width: 450px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid #515151;
+    border-radius: 20px;
+    padding: 10px;
+}
+.carousel ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    padding-top: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel ul li img {
+    width: 129px;
+}
+
+.carousel button {
+    width: 25px;
+    height: 30px;
+    background-color: #3f3f3f;
+    border: 1px solid #929292;
+    color: #929292;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 0;
+    cursor: pointer;
+}
+.carousel button:hover {
+    background-color: #535353;
+}

@@ -1,0 +1,21 @@
+body {
+    background-color: #333;
+    color: #cccccc;
+}
+body a {
+    color: #8b64c1;
+}
+
+#contents {
+    position: relative;
+    border: 1px solid #00ae00;
+    padding: 30px 8px;
+}
+#contents::after {
+    content: "#contents";
+    position: absolute;
+    left: 5px;
+    top: -10px;
+    background-color: #333;
+
+}

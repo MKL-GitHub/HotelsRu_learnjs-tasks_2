@@ -1,0 +1,22 @@
+body {
+    background-color: #333;
+    color: white;
+}
+
+#grid {
+    border-collapse: collapse;
+}
+
+#grid th,
+#grid td {
+    border: 1px solid #555;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#grid th {
+    cursor: pointer;
+}
+#grid th:hover {
+    background-color: #655c1d;
+}

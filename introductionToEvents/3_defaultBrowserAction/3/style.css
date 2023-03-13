@@ -1,0 +1,40 @@
+body {
+    background-color: #333;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 560px;
+    margin: 0 auto;
+}
+.gallery__main {
+    border: 1px solid #4e4e4e;
+    padding: 5px;
+    padding-bottom: 1px;
+}
+
+.gallery__list {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery__list li {
+    border: 1px solid #4e4e4e;
+    padding: 5px;
+    padding-bottom: 1px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery__list li img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    user-select: none;
+}
