@@ -1,0 +1,18 @@
+body {
+    background-color: #333;
+}
+
+.textarea-div {
+    background-color: transparent;
+    border: 1px solid #888888;
+    height: 150px;
+    width: 300px;
+    color: #c1c1c1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px;
+    font-size: 14px;
+}
+.textarea-div:focus {
+    border-color: #cacaca;
+    outline: none;
+  }

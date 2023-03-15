@@ -1,0 +1,79 @@
+body {
+    background-color: #333;
+    color: #ccc;
+    margin: 0;
+}
+
+section {
+    padding: 10px 20px;
+}
+
+.button {
+    background-color: transparent;
+    color: #ccc;
+    border: 1px solid #888888;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #ffffff10;
+}
+
+.prompt-form-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: none;
+    background-color: #00000060;
+    width: 100vw;
+    height: 100vh;
+    z-index: 8000;
+}
+
+.prompt-form {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 300px;
+    background-color: #212121;
+    border: 1px solid #cbcb9e;
+    border-radius: 5px;
+    padding: 10px 20px;
+    z-index: 9000;
+}
+.prompt-form input {
+    padding: 5px 10px;
+    background-color: #ffffff00;
+    color: #ccc;
+    border: 1px solid #969696;
+    border-radius: 4px;
+    outline: none;
+}
+.prompt-form input:focus {
+    border-color: #fffdd0;
+    background-color: #fffdd008;
+}
+.prompt-form input[type = text] {
+    caret-color: #ccc;
+}
+.prompt-form > :nth-child(2):-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 30px #282824 inset !important;
+    -webkit-text-fill-color: #ccc !important;
+}
+.prompt-form > :nth-child(3) {
+    display: flex;
+    gap: 10px;
+}
+.prompt-form > :nth-child(3) input {
+    cursor: pointer;
+}
+.prompt-form > :nth-child(3) input:hover {
+    background-color: #ffffff19;
+}

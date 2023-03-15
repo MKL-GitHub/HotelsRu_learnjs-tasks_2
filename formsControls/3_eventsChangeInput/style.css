@@ -1,0 +1,73 @@
+body {
+    background-color: #393e41;
+    color: #e6e6e6;
+    margin: 0;
+}
+
+.deposit-calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    width: 400px;
+    padding: 20px;
+}
+.deposit-calculator form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.deposit-calculator .form-item {
+    background-color: #393e41;
+    border: 1px solid #727272;
+    box-sizing: border-box;
+    outline: none;
+    width: 180px;
+    height: 25px;
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+    color: #e6e6e6;
+}
+
+.deposit-calculator .form-item[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.deposit-calculator .form-item:focus {
+    border-color: #b3b3b3;
+}
+.deposit-calculator .deposit-calculator__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.deposit-calculator .deposit-calculator__deposit-term select {
+    padding: 1px;
+}
+.deposit-calculator .deposit-calculator__result-chart{
+    display: flex;
+    gap: 10px;
+    height: 160px;
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.chart div {
+    width: 40px;
+}
+.chart__money-quantity {
+    flex: 1;
+}
+
+.chart_was div {
+    background-color: red;
+}
+
+.chart_will-be div {
+    background-color: green;
+}

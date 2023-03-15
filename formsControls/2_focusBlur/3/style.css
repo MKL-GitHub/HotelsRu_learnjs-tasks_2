@@ -1,0 +1,18 @@
+body {
+    background-color: #333;
+    color: white;
+}
+
+#mouse {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    transition: all 700ms;
+    margin: 0;
+}
+#mouse:focus {
+    color: yellow;
+}

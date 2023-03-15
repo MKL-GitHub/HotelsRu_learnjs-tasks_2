@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="deposit-calculator">
+        <h3>Депозитный калькулятор</h3>
+        <form name="depositCalculator">
+            <div class="deposit-calculator__initial-deposit deposit-calculator__item">
+                <label for="initial-deposit">Первоначальный депозит</label>
+                <input type="number" name="initialDeposit" id="initial-deposit" class="form-item">
+            </div>
+            <div class="deposit-calculator__deposit-term deposit-calculator__item">
+                <label for="deposit-term">Срок вклада?</label>
+                <select name="depositTerm" id="deposit-term" class="form-item">
+                    <option value="0.25">3 (минимум)</option>
+                    <option value="0.5">6 (полгода)</option>
+                    <option value="1" selected>12 (год)</option>
+                    <option value="1.5">18 (1.5 года)</option>
+                    <option value="2">24 (2 года)</option>
+                    <option value="2.5">30 (2.5 года)</option>
+                    <option value="3">36 (3 года)</option>
+                    <option value="5">60 (5 лет)</option>
+                </select>
+            </div>
+            <div class="deposit-calculator__deposit-term deposit-calculator__item">
+                <label for="annual-interest-rate">Годовая процентная ставка?</label>
+                <input type="number" name="annualInterestRate" id="annual-interest-rate" class="form-item">
+            </div>
+        </form>
+        
+        
+        <div class="deposit-calculator__result-chart">
+            <div class="chart chart_was">
+                <span>Было:</span>
+                <span class="chart__money-quantity"></span>
+                <div></div>
+            </div>
+            <div class="chart chart_will-be">
+                <span>Станет:</span>
+                <span class="chart__money-quantity"></span>
+                <div></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
